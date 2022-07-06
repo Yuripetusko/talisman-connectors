@@ -4,7 +4,7 @@
 
 ```bash
 
-# Build package
+# Build package without turborepo cache
 yarn release
 
 # browse to package directory, cannot publish from monorepo's root

@@ -3,8 +3,8 @@
  */
 const config = {
   env: {
-    RPC_URL_1: 'https://mainnet.infura.io/v3/84842078b09946638c03157f83405213',
-    RPC_URL_4: 'https://rinkeby.infura.io/v3/84842078b09946638c03157f83405213',
+    RPC_URL_1: 'https://mainnet.infura.io/v3/26723e19aa0744479b7d553c40456bea',
+    RPC_URL_4: 'https://rinkeby.infura.io/v3/26723e19aa0744479b7d553c40456bea'
   },
   webpack5: true,
   webpack: (config, { isServer }) => {
@@ -14,20 +14,20 @@ const config = {
         net: false,
         tls: false,
         electron: false,
-        '@ethereumjs/tx': false,
+        '@ethereumjs/tx': false
       }
     } else {
       config.resolve.fallback = {
         ...config.resolve.fallback,
         electron: false,
-        '@ethereumjs/tx': false,
+        '@ethereumjs/tx': false
       }
     }
     return config
   },
   experimental: {
-    esmExternals: 'loose',
-  },
+    esmExternals: 'loose'
+  }
 }
 
 module.exports = config

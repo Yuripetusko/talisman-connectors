@@ -2,7 +2,8 @@
   "name": "talisman-web3react-v6-example",
   "scripts": {
     "dev": "next",
-    "build:dapp": "next build && next export"
+    "build:dapp": "next build && next export",
+    "clean": "rimraf .next && rimraf .swc && rimraf node_modules"
   },
   "version": "6.0.0",
   "dependencies": {

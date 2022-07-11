@@ -3,14 +3,13 @@
 ## @talisman/web3react-v6-connector
 
 ```bash
+yarn workspace @talismn/web3react-v6-connector publish
 
-# Build package without turborepo cache
-yarn release
+```
 
-# browse to package directory, cannot publish from monorepo's root
-cd packages/web3react-v6-connector
+## @talisman/wagmi-connector
 
-# publish
-npm publish --access public
+```bash
+yarn workspace @talismn/wagmi-connector publish
 
 ```

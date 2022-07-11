@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "Talisman connector for web3react v6",
   "keywords": [
     "web3react",
@@ -25,13 +25,16 @@
   "module": "dist/web3react-v6-connector.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "dev": "tsdx watch",
+    "dev": "tsdx watch --verbose",
     "build": "tsdx build",
+    "build:packages": "tsdx build",
     "lint": "tsdx lint src",
-    "release": "tsdx build"
+    "prepublishOnly": "tsdx build",
+    "clean": "rimraf dist && rimraf node_modules"
   },
   "dependencies": {
     "@web3-react/abstract-connector": "^6.0.7",

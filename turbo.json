@@ -8,10 +8,12 @@
       "outputs": []
     },
     "dev": {
+      "dependsOn": ["^dev"],
       "cache": false
     },
     "release": {
       "cache": false
-    }
+    },
+    "clean": {}
   }
 }

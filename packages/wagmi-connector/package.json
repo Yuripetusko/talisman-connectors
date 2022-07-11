@@ -1,8 +1,11 @@
 {
   "name": "@talismn/wagmi-connector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "GPL-3.0-or-later",
   "author": "TalismanSociety",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,7 +23,8 @@
     "build": "tsc",
     "build:packages": "tsc",
     "release": "tsc",
-    "clean": "rimraf dist && rimraf node_modules"
+    "clean": "rimraf dist && rimraf node_modules",
+    "prepublishOnly": "tsc"
   },
   "peerDependencies": {
     "@wagmi/core": "^0.4.7"

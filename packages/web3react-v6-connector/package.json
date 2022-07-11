@@ -33,7 +33,7 @@
     "build": "tsdx build",
     "build:packages": "tsdx build",
     "lint": "tsdx lint src",
-    "release": "tsdx build",
+    "prepublishOnly": "tsdx build",
     "clean": "rimraf dist && rimraf node_modules"
   },
   "dependencies": {

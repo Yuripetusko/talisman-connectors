@@ -6,8 +6,11 @@ import {
   RpcError,
   UserRejectedRequestError
 } from '@wagmi/core'
+import { InjectedConnectorOptions } from '@wagmi/core/dist/declarations/src/connectors/injected'
 
-export type TalismanConnectorOptions = {}
+export type TalismanConnectorOptions = InjectedConnectorOptions & {
+  // nothing for now
+}
 
 export class TalismanConnector extends InjectedConnector {
   readonly id = 'talisman'

@@ -56,7 +56,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={client}>
       <NextHead>
-        <title>wagmi</title>
+        <title>wagmi-example-next</title>
       </NextHead>
 
       <Component {...pageProps} />

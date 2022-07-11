@@ -10,12 +10,15 @@ function Page() {
 
   return (
     <>
-      <Connect />
-
-      {isMounted && isConnected && (
+      {isMounted && (
         <>
-          <Account />
-          <NetworkSwitcher />
+          <Connect />
+          {isConnected && (
+            <>
+              <Account />
+              <NetworkSwitcher />
+            </>
+          )}
         </>
       )}
     </>

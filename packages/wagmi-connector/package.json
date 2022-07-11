@@ -7,7 +7,7 @@
     "access": "public"
   },
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/wagmi-connector.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -19,12 +19,11 @@
     "connector"
   ],
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "build:packages": "tsc",
-    "release": "tsc",
-    "clean": "rimraf dist && rimraf node_modules",
-    "prepublishOnly": "tsc"
+    "dev": "tsdx watch --target node --verbose",
+    "build": "tsdx build --target node",
+    "lint": "tsdx lint src",
+    "prepublishOnly": "rimraf dist && tsdx build --target node",
+    "clean": "rimraf dist && rimraf node_modules"
   },
   "peerDependencies": {
     "@wagmi/core": "^0.4.7"

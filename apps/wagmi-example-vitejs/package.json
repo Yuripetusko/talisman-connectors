@@ -9,6 +9,7 @@
     "clean": "rimraf dist && rimraf node_modules"
   },
   "dependencies": {
+    "@talismn/wagmi-connector": "*",
     "buffer": "^6.0.3",
     "ethers": "^5.6.5",
     "events": "^3.3.0",
@@ -16,8 +17,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "util": "^0.12.4",
-    "wagmi": "^0.5.9",
-    "@talismn/wagmi-connector": "*"
+    "wagmi": "^0.5.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.9",

@@ -15,7 +15,10 @@
   ],
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "build:packages": "tsc",
+    "release": "tsc",
+    "clean": "rimraf dist && rimraf node_modules"
   },
   "peerDependencies": {
     "@wagmi/core": "^0.4.7"

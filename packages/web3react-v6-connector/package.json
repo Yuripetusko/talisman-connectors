@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsdx watch",
+    "dev": "tsdx watch --verbose",
     "build": "tsdx build",
     "lint": "tsdx lint src",
     "release": "tsdx build"

@@ -41,3 +41,11 @@ yarn-error.log*
 .rts2_cache_system
 dist
 .env
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

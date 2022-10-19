@@ -28,10 +28,10 @@
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
   },
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "yarn@3.2.4",
   "prettier": {
     "semi": false,
     "singleQuote": true,

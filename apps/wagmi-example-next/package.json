@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:wagmi": "next dev",
-    "build": "next build",
+    "build:dapp": "next build",
     "start": "next start",
     "lint": "next lint",
     "clean": "rimraf .next && rimraf node_modules"

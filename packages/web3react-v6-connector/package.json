@@ -21,23 +21,27 @@
     "type": "git",
     "url": "git://github.com/TalismanSociety/talisman-connectors.git"
   },
-  "main": "dist/index.js",
-  "module": "dist/web3react-v6-connector.esm.js",
+  "main": "dist/talismn-web3react-v6-connector.cjs.js",
+  "module": "dist/talismn-web3react-v6-connector.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "dev": "tsdx watch --verbose",
-    "build": "tsdx build",
-    "lint": "tsdx lint src",
-    "prepublishOnly": "rimraf dist && tsdx build",
-    "clean": "rimraf dist && rimraf node_modules"
+    "build": "preconstruct build",
+    "lint": "eslint src",
+    "prepublishOnly": "rimraf dist && preconstruct build",
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo && rimraf .rts2_cache_cjs && rimraf .rts2_cache_esm"
   },
   "dependencies": {
     "@web3-react/abstract-connector": "^6.0.7",
     "@web3-react/types": "^6.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@preconstruct/cli": "^2.2.2"
   },
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/TalismanSociety/talisman-connectors/tree/main/packages/web3react-v6-connector#readme"

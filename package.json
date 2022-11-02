@@ -16,16 +16,16 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev --concurrency=50",
+    "dev:wagmi": "turbo run dev:wagmi",
     "release": "turbo run release",
     "lint": "turbo run lint",
-    "postinstall": "turbo run build --filter=./packages/*",
+    "postinstall": "preconstruct dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "turbo run clean --parallel && rimraf node_modules"
   },
   "devDependencies": {
-    "tsdx": "^0.11.0",
-    "turbo": "latest"
+    "turbo": "^1.6.3"
   },
   "engines": {
     "npm": ">=8.0.0",
@@ -38,6 +38,12 @@
     "printWidth": 120
   },
   "dependencies": {
+    "@preconstruct/cli": "^2.2.2",
     "rimraf": "^3.0.2"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
   }
 }

@@ -1,14 +1,14 @@
 {
   "name": "@talismn/wagmi-connector",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "license": "GPL-3.0-or-later",
   "author": "TalismanSociety",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "module": "dist/wagmi-connector.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/talismn-wagmi-connector.cjs.js",
+  "module": "dist/talismn-wagmi-connector.esm.js",
+  "typings": "dist/talismn-wagmi-connector.cjs.d.ts",
   "files": [
     "dist",
     "src"
@@ -19,18 +19,23 @@
     "connector"
   ],
   "scripts": {
-    "dev": "tsdx watch --target node --verbose",
-    "build": "tsdx build --target node",
-    "lint": "tsdx lint src",
-    "prepublishOnly": "rimraf dist && tsdx build --target node",
-    "clean": "rimraf dist && rimraf node_modules"
+    "build": "preconstruct build",
+    "prepublishOnly": "rimraf dist && preconstruct build",
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
   },
   "peerDependencies": {
-    "@wagmi/core": "^0.4.7"
+    "@wagmi/core": "*"
+  },
+  "peerDependenciesMeta": {
+    "@wagmi/core": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "@wagmi/core": "^0.4.7",
-    "ethers": "^5.6.9",
-    "typescript": "^4.7.4"
+    "@babel/core": "^7.19.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@preconstruct/cli": "^2.2.2",
+    "ethers": "^5.7.2",
+    "typescript": "^4.8.4"
   }
 }

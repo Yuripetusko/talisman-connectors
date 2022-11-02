@@ -1,15 +1,17 @@
 {
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "cache": false,
+      "outputs": ["dist/**"]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
-      "dependsOn": ["^dev"],
-      "cache": false
+      "dependsOn": ["^build"]
+    },
+    "dev:wagmi": {
+      "dependsOn": ["^build"]
     },
     "release": {
       "cache": false

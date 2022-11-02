@@ -4,9 +4,9 @@ import {
   InjectedConnector,
   ResourceUnavailableError,
   RpcError,
-  UserRejectedRequestError
+  UserRejectedRequestError,
+  InjectedConnectorOptions
 } from '@wagmi/core'
-import { InjectedConnectorOptions } from '@wagmi/core/dist/declarations/src/connectors/injected'
 
 export type TalismanConnectorOptions = InjectedConnectorOptions & {
   // nothing for now

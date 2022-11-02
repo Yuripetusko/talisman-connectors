@@ -2,29 +2,27 @@ import { Chain, Wallet } from '@rainbow-me/rainbowkit'
 import imgTalisman from './talisman.png'
 import { TalismanConnector } from '@talismn/wagmi-connector'
 
-export interface MyWalletOptions {
+export interface TalismanWalletOptions {
   chains: Chain[]
   shimDisconnect?: boolean
 }
 
-export const talismanWallet = ({ chains, shimDisconnect }: MyWalletOptions): Wallet => ({
+export const talismanWallet = ({ chains, shimDisconnect }: TalismanWalletOptions): Wallet => ({
   id: 'talisman',
   name: 'Talisman',
   iconUrl: imgTalisman,
   iconBackground: '#D5FF5C',
   downloadUrls: {
-    browserExtension: 'https://talisman.xyz/download'
+    browserExtension: 'https://talisman.xyz/download',
   },
   createConnector: () => {
     const connector = new TalismanConnector({
-      chains: chains as any, // they are compatible
+      chains,
       options: {
-        shimDisconnect
-      }
+        shimDisconnect,
+      },
     })
 
-    return {
-      connector: connector as any // they are compatible
-    }
-  }
+    return { connector }
+  },
 })

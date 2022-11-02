@@ -32,7 +32,8 @@
     "build": "preconstruct build",
     "lint": "eslint src",
     "prepublishOnly": "rimraf dist && preconstruct build",
-    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo && rimraf .rts2_cache_cjs && rimraf .rts2_cache_esm"
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo && rimraf .rts2_cache_cjs && rimraf .rts2_cache_esm",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@web3-react/abstract-connector": "^6.0.7",

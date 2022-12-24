@@ -2,10 +2,10 @@
 
 This monorepo contains the the source code for Talisman specific connectors to the different EVM frameworks.
 
-| Framework    | Connector                                                                   | Example                                                                                                   |
-| ------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| web3react v6 | [@talismn/web3react-v6-connector](./packages/web3react-v6-connector#readme) | [example](./apps/web3react-v6-example#readme)                                                             |
-| wagmi        | [@talismn/wagmi-connector](./packages/wagmi-connector#readme)               | [example vitejs](./apps/wagmi-example-vitejs#readme) [example nextjsjs](./apps/wagmi-example-next#readme) |
+| Framework    | Connector                                                                   | Example                                                                                                     |
+| ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| web3react v6 | [@talismn/web3react-v6-connector](./packages/web3react-v6-connector#readme) | [example](./apps/web3react-v6-example#readme)                                                               |
+| wagmi        | [@talismn/wagmi-connector](./packages/wagmi-connector#readme)               | [example vitejs](./apps/wagmi-example-vitejs#readme) [example nextjsjs](./apps/wagmi-example-nextjs#readme) |
 
 ## Setup
 

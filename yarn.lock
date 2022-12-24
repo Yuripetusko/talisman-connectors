@@ -947,6 +947,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@coinbase/wallet-sdk@npm:^3.5.4":
+  version: 3.6.3
+  resolution: "@coinbase/wallet-sdk@npm:3.6.3"
+  dependencies:
+    "@metamask/safe-event-emitter": 2.0.0
+    "@solana/web3.js": ^1.70.1
+    bind-decorator: ^1.0.11
+    bn.js: ^5.1.1
+    buffer: ^6.0.3
+    clsx: ^1.1.0
+    eth-block-tracker: 4.4.3
+    eth-json-rpc-filters: 4.2.2
+    eth-rpc-errors: 4.0.2
+    json-rpc-engine: 6.1.0
+    keccak: ^3.0.1
+    preact: ^10.5.9
+    qs: ^6.10.3
+    rxjs: ^6.6.3
+    sha.js: ^2.4.11
+    stream-browserify: ^3.0.0
+    util: ^0.12.4
+  checksum: f2ffd553f64ced32b9e9cf7fd2ec5708a5a8a4c4e5726787d3499db50cc135912c8565ec3c349b716ad8e9c7efeea682a265ffc365c78074a81345d35347621d
+  languageName: node
+  linkType: hard
+
 "@emotion/hash@npm:^0.8.0":
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
@@ -1936,6 +1961,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ledgerhq/connect-kit-loader@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "@ledgerhq/connect-kit-loader@npm:1.0.2"
+  checksum: 38475ee5a80b733fee571a8e882e7d309e0e28ef4776adb122bb4be010c54ca966c3946c1cbc78ae0d6abec62cd9ea6c7fbe4879041fe43d173bb287362fa34f
+  languageName: node
+  linkType: hard
+
 "@ledgerhq/devices@npm:^4.78.0":
   version: 4.78.0
   resolution: "@ledgerhq/devices@npm:4.78.0"
@@ -2142,6 +2174,27 @@ __metadata:
   version: 12.3.2
   resolution: "@next/swc-win32-x64-msvc@npm:12.3.2"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@noble/ed25519@npm:^1.7.0":
+  version: 1.7.1
+  resolution: "@noble/ed25519@npm:1.7.1"
+  checksum: b8e50306ac70f5cecc349111997e72e897b47a28d406b96cf95d0ebe7cbdefb8380d26117d7847d94102281db200aa3a494e520f9fc12e2f292e0762cb0fa333
+  languageName: node
+  linkType: hard
+
+"@noble/hashes@npm:^1.1.2":
+  version: 1.1.5
+  resolution: "@noble/hashes@npm:1.1.5"
+  checksum: de3f095a7ac1cbf5b4b3d09f193288d4f2eec35fbadf2ed9fd7e47d8a3042fef410052ba62dc0296a185f994c11192f5357fdb1bd9178c905efd82e946c53b00
+  languageName: node
+  linkType: hard
+
+"@noble/secp256k1@npm:^1.6.3":
+  version: 1.7.0
+  resolution: "@noble/secp256k1@npm:1.7.0"
+  checksum: 540a2b8e527ee1e5522af1c430e54945ad373883cac983b115136cd0950efa1f2c473ee6a36d8e69b6809b3ee586276de62f5fa705c77a9425721e81bada8116
   languageName: node
   linkType: hard
 
@@ -2415,6 +2468,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solana/web3.js@npm:^1.70.1":
+  version: 1.70.3
+  resolution: "@solana/web3.js@npm:1.70.3"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    "@noble/ed25519": ^1.7.0
+    "@noble/hashes": ^1.1.2
+    "@noble/secp256k1": ^1.6.3
+    "@solana/buffer-layout": ^4.0.0
+    agentkeepalive: ^4.2.1
+    bigint-buffer: ^1.1.5
+    bn.js: ^5.0.0
+    borsh: ^0.7.0
+    bs58: ^4.0.1
+    buffer: 6.0.1
+    fast-stable-stringify: ^1.0.0
+    jayson: ^3.4.4
+    node-fetch: 2
+    rpc-websockets: ^7.5.0
+    superstruct: ^0.14.2
+  checksum: 3a2809fed6ca994930f3b5ac263a1c7ab2e67b0b9d3343bdf43208f53031918327eb23c4b5eecd701d25418aa35f45e46f03245e0eaa05129d88c385725d316d
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.4.11":
   version: 0.4.11
   resolution: "@swc/helpers@npm:0.4.11"
@@ -2440,8 +2517,9 @@ __metadata:
     "@babel/core": ^7.19.6
     "@babel/preset-typescript": ^7.18.6
     "@preconstruct/cli": ^2.2.2
+    "@wagmi/core": ^0.8.5
     ethers: ^5.7.2
-    typescript: ^4.8.4
+    typescript: ^4.9.4
   peerDependencies:
     "@wagmi/core": "*"
   peerDependenciesMeta:
@@ -2984,6 +3062,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wagmi/chains@npm:0.1.5":
+  version: 0.1.5
+  resolution: "@wagmi/chains@npm:0.1.5"
+  checksum: 17577eaecb94450b9cbc9c16fa7c95416a79437cebbcd4cf16515098d9bb562d227c55922f5fddd493de4747f4131977c0eeb82197beafce700af42c16740ec1
+  languageName: node
+  linkType: hard
+
+"@wagmi/connectors@npm:0.1.2":
+  version: 0.1.2
+  resolution: "@wagmi/connectors@npm:0.1.2"
+  dependencies:
+    "@coinbase/wallet-sdk": ^3.5.4
+    "@ledgerhq/connect-kit-loader": ^1.0.1
+    "@walletconnect/ethereum-provider": ^1.8.0
+    abitype: ^0.1.8
+    eventemitter3: ^4.0.7
+  peerDependencies:
+    "@wagmi/core": 0.8.x
+    ethers: ^5.0.0
+  peerDependenciesMeta:
+    "@wagmi/core":
+      optional: true
+  checksum: 4819cc494f15b4b3dd6e8e57b597121dda8193f39f321ece1a498a50e5e6f97d7addb03f80c8d00545bb5bc0a5c5516369c5d2d875bce05f13e8c1c4e0a267aa
+  languageName: node
+  linkType: hard
+
 "@wagmi/core@npm:^0.6.8":
   version: 0.6.8
   resolution: "@wagmi/core@npm:0.6.8"
@@ -3001,6 +3105,28 @@ __metadata:
     "@walletconnect/ethereum-provider":
       optional: true
   checksum: 8e2942e3c72df4f0e146d78e12381ce15c88347b2432dda760dd91b5b610df0fc455f6ac0c3b36955a5255975927240ce04d3aebf3757d91c61fac0e3b079fc9
+  languageName: node
+  linkType: hard
+
+"@wagmi/core@npm:^0.8.5":
+  version: 0.8.5
+  resolution: "@wagmi/core@npm:0.8.5"
+  dependencies:
+    "@wagmi/chains": 0.1.5
+    "@wagmi/connectors": 0.1.2
+    abitype: ^0.2.5
+    eventemitter3: ^4.0.7
+    zustand: ^4.1.4
+  peerDependencies:
+    "@coinbase/wallet-sdk": ">=3.6.0"
+    "@walletconnect/ethereum-provider": ">=1.7.5"
+    ethers: ">=5.5.1"
+  peerDependenciesMeta:
+    "@coinbase/wallet-sdk":
+      optional: true
+    "@walletconnect/ethereum-provider":
+      optional: true
+  checksum: 97affd12999084f1be4098aeb6e58e1a5fbaf7093b8b905c9b0f7749189a7f3c8236b74bcb0d660c0c56221aca4713060ed11f0bb674d993204570c6d5a5ce67
   languageName: node
   linkType: hard
 
@@ -3552,6 +3678,28 @@ __metadata:
   peerDependencies:
     typescript: ">=4.7.4"
   checksum: 9525a31100314f6b32a3418f304047464f1a038452208988325dd4c18558d5220a8d7f72aaaf04ad60961e1a05353cfa0b7e74a4f34492dc1ab8638422b267b3
+  languageName: node
+  linkType: hard
+
+"abitype@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "abitype@npm:0.1.8"
+  peerDependencies:
+    typescript: ">=4.7.4"
+  checksum: 75db603ca20adaafd66c1097ab190cde333868ce5d5328b670574bd7e99dea92d1857eb5ff24405e4828c7cdaa0fec88142a4cff7883523b8ea2b8c328e8be45
+  languageName: node
+  linkType: hard
+
+"abitype@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "abitype@npm:0.2.5"
+  peerDependencies:
+    typescript: ">=4.7.4"
+    zod: ">=3.19.1"
+  peerDependenciesMeta:
+    zod:
+      optional: true
+  checksum: 46d2060d3b89ef49a88059fa0251eadf744f013246b1682f867d1657f695075da7d736caa61e6b427613e508cd691bbed5794321bd7e5862e6a46dd18e7aad3e
   languageName: node
   linkType: hard
 
@@ -15024,6 +15172,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^4.9.4":
+  version: 4.9.4
+  resolution: "typescript@npm:4.9.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: e782fb9e0031cb258a80000f6c13530288c6d63f1177ed43f770533fdc15740d271554cdae86701c1dd2c83b082cea808b07e97fd68b38a172a83dbf9e0d0ef9
+  languageName: node
+  linkType: hard
+
 "typescript@patch:typescript@^3.9.10#~builtin<compat/typescript>":
   version: 3.9.10
   resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=701156"
@@ -15041,6 +15199,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+  version: 4.9.4
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=701156"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 37f6e2c3c5e2aa5934b85b0fddbf32eeac8b1bacf3a5b51d01946936d03f5377fe86255d4e5a4ae628fd0cd553386355ad362c57f13b4635064400f3e8e05b9d
   languageName: node
   linkType: hard
 
@@ -16569,5 +16737,22 @@ __metadata:
     react:
       optional: true
   checksum: a9ceb7849ebf407d31a6121be09acfb041324f6f45ca9a3f62ab85e2d840d0f48f157abd99ed7b9e08b96ebb4e15480b4a196ed8b1df8a5a9a2ba9afd7c639a7
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.1.4":
+  version: 4.1.5
+  resolution: "zustand@npm:4.1.5"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 13190ee8e8a797c5347b525a7c392be62b2addacdd9645dd20d37ea053f96c7c7067c099c6201e98ebb8d54991f2e04e241cc323f9a25b841d44f0ae048e3afc
   languageName: node
   linkType: hard

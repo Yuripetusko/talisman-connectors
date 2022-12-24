@@ -10,12 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@talismn/wagmi-connector": "*",
     "ethers": "5.7.2",
     "next": "^12.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "wagmi": "0.9.5",
-    "@talismn/wagmi-connector": "*"
+    "wagmi": "0.9.5"
   },
   "devDependencies": {
     "@preconstruct/next": "^4.0.0",

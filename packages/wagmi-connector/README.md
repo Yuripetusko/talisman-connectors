@@ -26,11 +26,17 @@ const client = createClient({
   autoConnect: true,
   connectors: [
     new TalismanConnector({
-      chains
-    })
+      chains,
+    }),
     //...other connectors
   ],
   provider,
-  webSocketProvider
+  webSocketProvider,
 })
 ```
+
+## Version compatibility
+
+`wagmi` 0.9.x is compatible with current version of `@talismn/wagmi-connector`.
+`wagmi` 0.8.x isn't compatible.
+`wagmi` 0.7.x is compatible with `@talismn/wagmi-connector` version 0.1.x.

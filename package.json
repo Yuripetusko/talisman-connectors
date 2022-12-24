@@ -22,7 +22,7 @@
     "lint": "turbo run lint",
     "postinstall": "preconstruct dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "turbo run clean --parallel && rimraf node_modules"
+    "clean": "rimraf **/node_modules **/.turbo **/dist **/build **/.next .yarn/cache"
   },
   "devDependencies": {
     "turbo": "^1.6.3"

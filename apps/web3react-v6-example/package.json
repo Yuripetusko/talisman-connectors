@@ -20,10 +20,10 @@
     "@web3-react/trezor-connector": "^6.1.9",
     "@web3-react/walletconnect-connector": "^6.2.13",
     "@web3-react/walletlink-connector": "^6.2.14",
-    "ethers": "^5.7.2",
-    "next": "^12.3.2",
+    "ethers": "5.7.2",
+    "next": "^12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^3.9.10"
+    "typescript": "^4.9.4"
   }
 }

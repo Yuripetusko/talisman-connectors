@@ -1,18 +1,19 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 
-import { WagmiConfig, configureChains, createClient, defaultChains } from 'wagmi'
-import { alchemyProvider } from 'wagmi/providers/alchemy'
+import { WagmiConfig, configureChains, createClient, mainnet } from 'wagmi'
+import { publicProvider } from 'wagmi/providers/public'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { TalismanConnector } from '@talismn/wagmi-connector'
 import { App } from './App'
+import { avalanche, polygon } from '@wagmi/chains'
 
 const alchemyId = import.meta.env.VITE_ALCHEMY_ID as string
 
-const { chains, provider, webSocketProvider } = configureChains(defaultChains, [alchemyProvider({ alchemyId })])
+const { chains, provider, webSocketProvider } = configureChains([mainnet, polygon, avalanche], [publicProvider()])
 
 const client = createClient({
   autoConnect: true,
@@ -21,28 +22,28 @@ const client = createClient({
     new CoinbaseWalletConnector({
       chains,
       options: {
-        appName: 'wagmi' //
-      }
+        appName: 'wagmi', //
+      },
     }),
     new WalletConnectConnector({
       chains,
       options: {
-        qrcode: true
-      }
+        qrcode: true,
+      },
     }),
     new InjectedConnector({
       chains,
       options: {
         name: 'Injected',
-        shimDisconnect: true
-      }
+        shimDisconnect: true,
+      },
     }),
     new TalismanConnector({
-      chains
-    })
+      chains,
+    }),
   ],
   provider,
-  webSocketProvider
+  webSocketProvider,
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

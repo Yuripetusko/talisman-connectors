@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "prepare": "yarn build:wagmi-connector",
-    "build:wagmi-connector": "turbo run build --filter=wagmi-connector",
+    "build:wagmi-connector": "cd packages/wagmi-connector && yarn build",
     "build": "turbo run build",
     "dev": "turbo run dev --concurrency=50",
     "dev:wagmi": "turbo run dev:wagmi",

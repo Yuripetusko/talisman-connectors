@@ -6,19 +6,17 @@ import {
   WagmiConfig,
   configureChains,
   createClient,
-  defaultChains,
+  mainnet
 } from 'wagmi'
-import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { TalismanConnector } from '@talismn/wagmi-connector'
+import { publicProvider } from 'wagmi/providers/public';
 
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID
-
-const { chains, provider, webSocketProvider } = configureChains(defaultChains, [
-  alchemyProvider({ alchemyId }),
+const { chains, provider, webSocketProvider } = configureChains([mainnet], [
+  publicProvider(),
 ])
 
 const client = createClient({

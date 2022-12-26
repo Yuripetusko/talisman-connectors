@@ -1,6 +1,9 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsxImportSource": "preact",
+    "isolatedModules": true,
     "target": "es6",
     "module": "esnext",
     "lib": ["dom", "esnext"],

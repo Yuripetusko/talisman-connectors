@@ -20,11 +20,13 @@
     "dev:wagmi": "turbo run dev:wagmi",
     "release": "turbo run release",
     "lint": "turbo run lint",
-    "postinstall": "preconstruct dev",
+    "postinstall": "yarn build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "rimraf **/node_modules **/.turbo **/dist **/build **/.next .yarn/cache"
   },
   "devDependencies": {
+    "@parcel/packager-ts": "2.8.2",
+    "@parcel/transformer-typescript-types": "2.8.2",
     "turbo": "^1.6.3"
   },
   "engines": {
@@ -38,12 +40,6 @@
     "printWidth": 120
   },
   "dependencies": {
-    "@preconstruct/cli": "^2.2.2",
     "rimraf": "^3.0.2"
-  },
-  "preconstruct": {
-    "packages": [
-      "packages/*"
-    ]
   }
 }

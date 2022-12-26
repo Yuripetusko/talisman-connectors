@@ -17,6 +17,7 @@ build
 # misc
 .DS_Store
 *.pem
+.idea
 
 # debug
 npm-debug.log*
@@ -41,6 +42,7 @@ yarn-error.log*
 .rts2_cache_system
 dist
 .env
+.parcel-cache
 
 .pnp.*
 .yarn/*

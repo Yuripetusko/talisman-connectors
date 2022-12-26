@@ -20,7 +20,6 @@
     "dev:wagmi": "turbo run dev:wagmi",
     "release": "turbo run release",
     "lint": "turbo run lint",
-    "postinstall": "yarn build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "rimraf **/node_modules **/.turbo **/dist **/build **/.next .yarn/cache"
   },
